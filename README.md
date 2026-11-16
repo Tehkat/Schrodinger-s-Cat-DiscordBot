@@ -105,18 +105,6 @@ All settings are optional except `DISCORD_TOKEN`.
 
 To add or remove journals, edit the `JOURNALS` dictionary in `bot.py` (journal name → ISSNs).
 
-## Running 24/7
-
-The bot needs to stay online to post on schedule. Some options:
-
-- **A VPS or home server** with a `systemd` service. Use `Restart=always` so it restarts after crashes and reboots.
-- **A Raspberry Pi or old PC** at home.
-- **An old Android phone** using [Termux](https://f-droid.org/packages/com.termux/) (install from F-Droid), `tmux`, and Termux:Boot to start it on reboot. Disable battery optimisation for Termux and use a wake lock.
-
-Free PaaS tiers that sleep when idle (such as Render or Replit free plans) don't suit Discord bots, because they drop the gateway connection.
-
-Run only **one** copy of the bot per token. Two running copies would post every digest twice.
-
 ## Files created at runtime
 
 | File | Purpose |
