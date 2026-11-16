@@ -35,25 +35,31 @@ Information is used only to:
 
 It is not used for profiling, advertising, marketing or sale.
 
-## 4. Third parties
+## 4. Third Parties
 
 - **Discord** processes data when you use the Bot on its platform, under [Discord's Privacy Policy](https://discord.com/privacy).
-- **Crossref** supplies article information. The Bot sends Crossref requests for journal articles (journal ISSN numbers and date filters). **No user, server or channel information is sent.** A request may include a contact email belonging to the operator, as Crossref recommends for programmatic access.
-- Article links in digests lead to publisher websites (such as nature.com) that have their own privacy practices.
+- **Amazon Web Services (AWS)** provides the server infrastructure on which the Bot runs and where its data files are stored. AWS may process or store information as necessary to provide this hosting service.
+- **Crossref** supplies article information. The Bot sends Crossref requests for journal articles (journal ISSN numbers and date filters). No user, server or channel information is sent. A request may include a contact email belonging to the operator, as Crossref recommends for programmatic access.
+- Article links in digests lead to publisher websites (such as nature.com), which have their own privacy practices.
 
-I don't use analytics, trackers, advertising networks or any other third-party data processors.
+I do not use analytics, trackers, advertising networks or other third-party services for advertising or tracking.
 
-## 5. Where data is kept and how it's protected
+## 5. Where Data Is Kept and How It's Protected
 
-The Bot runs on a personal device in South Africa, and its data files are stored on that device. Access is limited to me, and I use reasonable measures to protect it (such as password and key-based login). The files are not encrypted at rest, and no online system is perfectly secure, so I can't guarantee absolute security.
+The Bot runs on an Amazon Web Services (AWS) server. Its data files, including subscribed channel IDs and the article cache, are stored on that server.
 
-## 6. Retention and deletion
+Access to the server and its data files is restricted to the operator. Reasonable technical and organisational measures are used to protect the information against unauthorised access, alteration, loss or disclosure.
 
-- **Channel IDs** are kept until you run `/unsubscribe` in that channel. If the Bot is removed from a server without unsubscribing, the channel ID may remain stored (the Bot can no longer post there), and I periodically clear out stale entries.
+No online system can be guaranteed to be completely secure.
+
+## 6. Retention and Deletion
+
+- **Channel IDs** are kept while their channels remain subscribed. Running `/unsubscribe` in a subscribed channel removes its ID from the subscription list.
+- If the Bot is removed from a server or a subscribed channel is deleted, the associated subscription entries are removed when detected or during periodic cleanup.
 - **Article cache** entries are deleted automatically after about 30 days.
-- **Logs** are temporary and not retained long-term.
+- **Logs** are temporary and are not retained long-term.
 
-To stop the Bot storing data about your channel, run `/unsubscribe` in it and remove the Bot from your server.
+If you want to request access to, correction of or deletion of information associated with your use of the Bot, contact the operator using the contact details provided in the Bot's support information.
 
 ## 7. Your rights
 
